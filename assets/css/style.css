@@ -61,6 +61,10 @@ nav a:hover {
   clear: both;
 }
 
+.clr {
+  clear: both;
+}
+
 h1,
 h2,
 h3,
@@ -182,6 +186,19 @@ h3,
   margin-right: 0;
 }
 
+h3 {
+  float: left;
+  background-color: #4aaaa5;
+  color: #eee;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 10px;
+  left: 50px;
+
+
+}
+
 /* main */
 
 #main-container {
@@ -196,12 +213,22 @@ h3,
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
+  position: relative;
 }
 
 .auth-image {
   float: left;
   height: 300px;
+  box-sizing: border-box;
   padding: 20px;
+}
+
+.pic {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 /* contact page */
@@ -243,3 +270,50 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+    #masthead {
+      position: static;
+      z-index: 99;
+      float:none;
+      width: 100%;
+      margin: 0 0 30px;
+      overflow: auto;
+      color: #fff;
+      background: #fff;
+      border-bottom: 2px solid #ccc;
+    }
+    #logo {
+      width: 100%;
+      height: 90px;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 90px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      background: #4aaaa5;
+    }
+    #main-container {
+      padding-top: 10px;
+    }
+
+    nav {
+      width: 80%;
+      padding-left: 0px;
+      margin-left: 0px;
+
+    }
+  }
+
+
